@@ -31,8 +31,8 @@ export default function ProductDetail() {
       </div>
       <div className="col-span-7">
           <h4 className="border-b-2 text-2xl font-bold pb-2">{product.name}</h4>
-          <p className="text-red-600 font-bold text-xl">100,000,000 ₫</p>
-          <p>màu sắc:  <span className="font-bold">vàng</span></p>
+          <p className="text-red-600 font-bold text-xl">{product.price}</p>
+          <p>màu sắc:  <span className="font-bold">{product.color}</span></p>
           <ul>
               <li className="">Dung tích: 475 lít</li>
               <li className="">Dung tích: 475 lít</li>
@@ -46,7 +46,6 @@ export default function ProductDetail() {
                   <h3 className="ml-2">THÊM VÀO RỎ HÀNG</h3>
               </div>
           </div>
-
       </div>
   </div>
 </div><Footer/>

@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, Link } from "react-router-dom";
 import { Menu, Dropdown, Button, Space } from 'antd';
 import { CalendarOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
 import React, { Component } from 'react';
@@ -7,9 +7,7 @@ import React, { Component } from 'react';
 const nav = (
     <Menu>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://localhost:3000/login">
-                đăng nhập
-            </a>
+            <Link target="_blank" rel="noopener noreferrer" to="/login"> đăng nhập</Link>
         </Menu.Item>
         <Menu.Item>
             <a target="_blank" rel="noopener noreferrer">
@@ -58,13 +56,13 @@ class LayoutWebsite extends Component {
                                                 GIỚI THIỆU
                                             </NavLink>
                                         </Dropdown>
-                                        <NavLink className="mx-2 uppercase hover:text-white" to="/product" activeclass="active">
+                                        <NavLink className="mx-2 uppercase hover:text-white" to="/" activeclass="active">
                                             TIN TỨC
                                         </NavLink>
                                         <NavLink className="mx-2 uppercase hover:text-white" to="/pagesimage" activeclass="active">
                                             ẢNH
                                         </NavLink>
-                                        <NavLink className="mx-2 uppercase hover:text-white" to="help" activeclass="active">
+                                        <NavLink className="mx-2 uppercase hover:text-white" to="/" activeclass="active">
                                             VIDEO
                                         </NavLink>
                                         <NavLink className="mx-2 uppercase hover:text-white" to="product" activeclass="active">

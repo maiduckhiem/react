@@ -3,10 +3,9 @@ import { MenuUnfoldOutlined } from '@ant-design/icons';
 
 import { Menu } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
-import Footer from "../component/footer";
 
 const { SubMenu } = Menu;
-const Products = ({ products }) => {
+const Products = ({ product }) => {
   return (
     <div>
       <div className="container mx-auto">
@@ -44,21 +43,23 @@ const Products = ({ products }) => {
 
           <div className="col-span-9">
             <h3 className="p-3 bg-gray-300">SẢN PHẨM</h3>
-            <div className="grid grid-cols-12 mt-10 gap-5">
-              {products.map((item, index) => {
-                return (
-                  <div className="col-span-4" key={index}>
-                    <div><img src={item.image}/></div>
-                    <div className="text-center mt-2"><Link to={`${item.id}`}>{item.name}</Link></div>
-                    <div className="text-center font-bold text-red-500">{item.price}</div>
-                  </div>
-                );
-              })}
+            <div className="grid grid-cols-12">
+              <div className="col-span-4">
+                {product.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <div>{item.name}</div>
+                      <div>
+                        <Link to={`${item.id}`}>Chi tiết</Link>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
     </div>
   );
 }

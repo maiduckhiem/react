@@ -15,6 +15,7 @@ import ProductEditPage from "./pages/productEdit";
 import Products from "./pages/product";
 import Home from "./component/home";
 import Productimage from "./component/productImage";
+import Login from "./component/login";
 function App() {
   const [product, setProducts] = useState([]);
 
@@ -79,8 +80,8 @@ function App() {
           element={<Products products={product} />}
         />
         <Route path="product/:id" element={<ProductDetail />} />
-        <Route path="contact" element={<div>Contact</div>} />
-        <Route path="/pagesimage" element={<Productimage/>} />
+        <Route path="login" element={<Login/>} />
+        <Route path="/pagesimage" element={<Productimage products={product} />} />
       </Route>
 
       {/* Layout Admin */}
