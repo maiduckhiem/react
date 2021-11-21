@@ -10,7 +10,7 @@ const contentStyle = {
 };
 const Home = ({ products }) => {
     return (
-        <div className="Home">
+        <div className="Home z-0">
             <Carousel autoplay>
                 <div>
                     <h3 style={contentStyle}><img src="https://electronic04.web4s.vn/uploads/plugin/gallery/125/bannerslide1-banner4-bannerslide1-banner-slide-4.jpg" /></h3>

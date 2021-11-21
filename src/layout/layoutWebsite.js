@@ -39,8 +39,8 @@ class LayoutWebsite extends Component {
     render() {
         return (
             <div>
-                <div className="bg-gray-800">
-                    <div className="container mx-auto py-4">
+                <div className="bg-gray-800 sticky top-0 ">
+                    <div className="container mx-auto py-4 z-50">
                         <div className="grid grid-cols-12">
                             <div className="col-span-3">
                                 <img src="https://electronic04.web4s.vn/uploads/plugin/setting/3/i-n-may-logo.png" />
