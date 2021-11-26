@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 const nav = (
     <Menu>
         <Menu.Item>
-            <Link target="_blank" rel="noopener noreferrer" to="/login"> đăng nhập</Link>
+            <Link target="_blank" rel="" to="/login"> đăng nhập</Link>
         </Menu.Item>
         <Menu.Item>
             <a target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@ class LayoutWebsite extends Component {
     render() {
         return (
             <div>
-                <div className="bg-gray-800 sticky top-0 ">
+                <div className="bg-gray-800">
                     <div className="container mx-auto py-4 z-50">
                         <div className="grid grid-cols-12">
                             <div className="col-span-3">
@@ -48,24 +48,24 @@ class LayoutWebsite extends Component {
                             <div className="col-span-6 mt-1">
                                 <Space direction="vertical">
                                     <Space wrap>
-                                        <NavLink className="mx-2 uppercase hover:text-white" to="/" activeclass="active">
+                                        <NavLink className="mx-2 text-white uppercase hover:text-green-500" to="/" activeclass="active">
                                             TRANG CHỦ
                                         </NavLink>
                                         <Dropdown overlay={menu} placement="bottomLeft">
-                                            <NavLink className="mx-2 uppercase hover:text-white " to="" activeclass="active">
+                                            <NavLink className="mx-2 text-white uppercase hover:text-green-500 " to="/introduce" activeclass="active">
                                                 GIỚI THIỆU
                                             </NavLink>
                                         </Dropdown>
-                                        <NavLink className="mx-2 uppercase hover:text-white" to="/" activeclass="active">
+                                        <NavLink className="mx-2 text-white uppercase hover:text-green-500" to="/" activeclass="active">
                                             TIN TỨC
                                         </NavLink>
-                                        <NavLink className="mx-2 uppercase hover:text-white" to="/pagesimage" activeclass="active">
+                                        <NavLink className="mx-2 text-white uppercase hover:text-green-500" to="/pagesimage" activeclass="active">
                                             ẢNH
                                         </NavLink>
-                                        <NavLink className="mx-2 uppercase hover:text-white" to="/" activeclass="active">
+                                        <NavLink className="mx-2 text-white uppercase hover:text-green-500" to="/" activeclass="active">
                                             VIDEO
                                         </NavLink>
-                                        <NavLink className="mx-2 uppercase hover:text-white" to="product" activeclass="active">
+                                        <NavLink className="mx-2 text-white uppercase hover:text-green-500" to="product" activeclass="active">
                                             SẢN PHẨM
                                         </NavLink>
                                     </Space>

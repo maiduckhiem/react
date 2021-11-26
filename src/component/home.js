@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Carousel } from 'antd';
+import { Link } from "react-router-dom";
 import Footer from "./footer";
 const contentStyle = {
     height: '450px',
@@ -8,9 +9,15 @@ const contentStyle = {
     textAlign: 'center',
     background: '#364d79',
 };
+const perpage = 3;
+const perpage1 = 6;
+const currentpage = 1;
+const start = 0;
+const end = perpage;
+const end1 = perpage1;
 const Home = ({ products }) => {
     return (
-        <div className="Home z-0">
+        <div className="Home">
             <Carousel autoplay>
                 <div>
                     <h3 style={contentStyle}><img src="https://electronic04.web4s.vn/uploads/plugin/gallery/125/bannerslide1-banner4-bannerslide1-banner-slide-4.jpg" /></h3>
@@ -28,39 +35,22 @@ const Home = ({ products }) => {
 
             <div className="container mx-auto">
                 <h3 className="uppercase text-xl text-green-600">flash sale chớp nhoáng</h3>
-                <div className="grid grid-cols-12 gap-10">
-                    <div className="col-span-3">
-                        <div className="mt-10 border-2">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/69/t-l-nh-2-canh-sharp-sj-16vf3-cms-165l-1487829161337-2422008-0.jpg" />
-                        </div>
-                        <h4 className="mx-2 text-center mt-5">
-                            <a className="text-black text-xs" href="">Tủ lạnh 2 cánh Sharp SJ-16VF3 (CMS), 165L (Xám)</a></h4>
-                        <p className="text-center font-bold">4.000.000đ</p>
-                    </div>
-                    <div className="col-span-3">
-                        <div className="mt-10 border-2">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/69/t-l-nh-2-canh-sharp-sj-16vf3-cms-165l-1487829161337-2422008-0.jpg" />
-                        </div>
-                        <h4 className="mx-2 text-center mt-5">
-                            <a className="text-black text-xs" href="">Tủ lạnh 2 cánh Sharp SJ-16VF3 (CMS), 165L (Xám)</a></h4>
-                        <p className="text-center font-bold">4.000.000đ</p>
-                    </div>
-                    <div className="col-span-3">
-                        <div className="mt-10 border-2">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/69/t-l-nh-2-canh-sharp-sj-16vf3-cms-165l-1487829161337-2422008-0.jpg" />
-                        </div>
-                        <h4 className="mx-2 text-center mt-5">
-                            <a className="text-black text-xs" href="">Tủ lạnh 2 cánh Sharp SJ-16VF3 (CMS), 165L (Xám)</a></h4>
-                        <p className="text-center font-bold">4.000.000đ</p>
-                    </div>
-                    <div className="col-span-3">
-                        <div className="mt-10 border-2">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/69/t-l-nh-2-canh-sharp-sj-16vf3-cms-165l-1487829161337-2422008-0.jpg" />
-                        </div>
-                        <h4 className="mx-2 text-center mt-5">
-                            <a className="text-black text-xs" href="">Tủ lạnh 2 cánh Sharp SJ-16VF3 (CMS), 165L (Xám)</a></h4>
-                        <p className="text-center font-bold">4.000.000đ</p>
-                    </div>
+                <div className="grid grid-cols-12 gap-7 mt-10">
+                    {products.map((item, index) => {
+                        if (index >= start && index < end) {
+                            return (
+                                <div className="col-span-4" key={index}>
+                                    <div className=" border-2">
+                                        <img src={item.image} />
+                                    </div>
+                                    <h4 className="mx-2 text-center">
+                                        <div className="text-center"><Link to={`product/${item.id}`}>{item.name}</Link></div>
+                                    </h4>
+                                    <p className="text-center font-bold">{item.price}</p>
+                                </div>
+                            );
+                        }
+                    })}
                 </div>
                 <div className="grid grid-cols-3 mt-10 gap-5    ">
                     <div className="col-span-1">
@@ -78,34 +68,21 @@ const Home = ({ products }) => {
                         điên thoại
                     </h3>
                     <div className="grid grid-cols-12 gap-5 mt-4">
-                        <div className="col-span-3">
-                            <div className="border-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/97/ng-h-thong-minh-apple-wach-stainless-steel-38mm-series-2-silver-link-bracelet-1495103959921-8808088.jpeg" />
-                            </div>
-                            <h4 className="text-center mt-3 mx-2 text-xs">Đồng hồ thông minh Apple Wach Stainless Steel 38mm Series 2 - Silver </h4>
-                            <p className="text-center font-bold">25,000,000d</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/97/ng-h-thong-minh-apple-wach-stainless-steel-38mm-series-2-silver-link-bracelet-1495103959921-8808088.jpeg" />
-                            </div>
-                            <h4 className="text-center mt-3 mx-2 text-xs">Đồng hồ thông minh Apple Wach Stainless Steel 38mm Series 2 - Silver </h4>
-                            <p className="text-center font-bold">25,000,000d</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/97/ng-h-thong-minh-apple-wach-stainless-steel-38mm-series-2-silver-link-bracelet-1495103959921-8808088.jpeg" />
-                            </div>
-                            <h4 className="text-center mt-3 mx-2 text-xs">Đồng hồ thông minh Apple Wach Stainless Steel 38mm Series 2 - Silver </h4>
-                            <p className="text-center font-bold">25,000,000d</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/97/ng-h-thong-minh-apple-wach-stainless-steel-38mm-series-2-silver-link-bracelet-1495103959921-8808088.jpeg" />
-                            </div>
-                            <h4 className="text-center mt-3 mx-2 text-xs">Đồng hồ thông minh Apple Wach Stainless Steel 38mm Series 2 - Silver </h4>
-                            <p className="text-center font-bold">25,000,000d</p>
-                        </div>
+                        {products.map((item, index) => {
+                            if (index >= start && index < end) {
+                                return (
+                                    <div className="col-span-4" key={index}>
+                                        <div className=" border-2">
+                                            <img src={item.image} />
+                                        </div>
+                                        <h4 className="mx-2 text-center">
+                                            <div className="text-center"><Link to={`product/${item.id}`}>{item.name}</Link></div>
+                                        </h4>
+                                        <p className="text-center font-bold">{item.price}</p>
+                                    </div>
+                                );
+                            }
+                        })}
                     </div>
                     <div className="mt-5 grid grid-cols-12 gap-5">
                         <div className="col-span-8"><img src="https://electronic04.web4s.vn/uploads/plugin/custom_img/2017-07-07/custom-banner-11.png" /></div>
@@ -115,42 +92,21 @@ const Home = ({ products }) => {
                 <div>
                     <h3 className="text-xl text-green-600 font-bold uppercase mt-10">điện tử - âm thanh</h3>
                     <div className="grid grid-cols-12 gap-5">
-                        <div className="col-span-3">
-                            <div className="border-2 mt-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/87/loa-bluetooth-sony-srs-x11-1468394443648-4876139-0.jpg" />
-                            </div>
-                            <h3 className="mx-2 text-center text-xs mt-3">
-                                Loa Bluetooth Sony SRS-X11 (Xanh biển)
-                            </h3>
-                            <p className="text-center font-bold ">2,900,000 ₫</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2 mt-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/87/loa-bluetooth-sony-srs-x11-1468394443648-4876139-0.jpg" />
-                            </div>
-                            <h3 className="mx-2 text-center text-xs mt-3">
-                                Loa Bluetooth Sony SRS-X11 (Xanh biển)
-                            </h3>
-                            <p className="text-center font-bold ">2,900,000 ₫</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2 mt-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/87/loa-bluetooth-sony-srs-x11-1468394443648-4876139-0.jpg" />
-                            </div>
-                            <h3 className="mx-2 text-center text-xs mt-3">
-                                Loa Bluetooth Sony SRS-X11 (Xanh biển)
-                            </h3>
-                            <p className="text-center font-bold ">2,900,000 ₫</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2 mt-2">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/87/loa-bluetooth-sony-srs-x11-1468394443648-4876139-0.jpg" />
-                            </div>
-                            <h3 className="mx-2 text-center text-xs mt-3">
-                                Loa Bluetooth Sony SRS-X11 (Xanh biển)
-                            </h3>
-                            <p className="text-center font-bold ">2,900,000 ₫</p>
-                        </div>
+                        {products.map((item, index) => {
+                            if (index >= start && index < end) {
+                                return (
+                                    <div className="col-span-4" key={index}>
+                                        <div className=" border-2">
+                                            <img src={item.image} />
+                                        </div>
+                                        <h4 className="mx-2 text-center">
+                                            <div className="text-center"><Link to={`product/${item.id}`}>{item.name}</Link></div>
+                                        </h4>
+                                        <p className="text-center font-bold">{item.price}</p>
+                                    </div>
+                                );
+                            }
+                        })}
                     </div>
 
                 </div>
@@ -167,34 +123,21 @@ const Home = ({ products }) => {
                         đồ da dụng
                     </h3>
                     <div className="grid grid-cols-12 gap-5">
-                        <div className="col-span-3">
-                            <div className="border-2 mt-3">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/81/b-p-gas-ban-sunhouse-shb3365-147306340998-6819208-0.jpg" />
-                            </div>
-                            <h4 className="text-center mt-2">Bếp gas bàn Sunhouse SHB3365 (Màu Đen)</h4>
-                            <p className="text-center font-bold">4,100,000 ₫</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2 mt-3">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/81/b-p-gas-ban-sunhouse-shb3365-147306340998-6819208-0.jpg" />
-                            </div>
-                            <h4 className="text-center mt-2">Bếp gas bàn Sunhouse SHB3365 (Màu Đen)</h4>
-                            <p className="text-center font-bold">4,100,000 ₫</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2 mt-3">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/81/b-p-gas-ban-sunhouse-shb3365-147306340998-6819208-0.jpg" />
-                            </div>
-                            <h4 className="text-center mt-2">Bếp gas bàn Sunhouse SHB3365 (Màu Đen)</h4>
-                            <p className="text-center font-bold">4,100,000 ₫</p>
-                        </div>
-                        <div className="col-span-3">
-                            <div className="border-2 mt-3">
-                                <img src="https://electronic04.web4s.vn/uploads/plugin/products/81/b-p-gas-ban-sunhouse-shb3365-147306340998-6819208-0.jpg" />
-                            </div>
-                            <h4 className="text-center mt-2">Bếp gas bàn Sunhouse SHB3365 (Màu Đen)</h4>
-                            <p className="text-center font-bold">4,100,000 ₫</p>
-                        </div>
+                        {products.map((item, index) => {
+                            if (index >= start && index < end) {
+                                return (
+                                    <div className="col-span-4" key={index}>
+                                        <div className=" border-2">
+                                            <img src={item.image} />
+                                        </div>
+                                        <h4 className="mx-2 text-center">
+                                            <div className="text-center"><Link to={`product/${item.id}`}>{item.name}</Link></div>
+                                        </h4>
+                                        <p className="text-center font-bold">{item.price}</p>
+                                    </div>
+                                );
+                            }
+                        })}
                     </div>
                 </div>
             </div>
@@ -215,34 +158,21 @@ const Home = ({ products }) => {
             <div className="container mx-auto mt-10">
                 <h3 className="uppercase text-green-500 text-xl">kỹ thuật số</h3>
                 <div className="mt-10 grid grid-cols-12 gap-5">
-                    <div className="col-span-3">
-                        <div className="border-2 mt-3">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/91/ma-y-nghe-nha-c-sony-walkman-nw-ws413-4gb-147486771223-7528226-0.jpg" />
-                        </div>
-                        <h4 className="text-center mt-3">Máy nghe nhạc Sony Walkman (Xanh lá cây)</h4>
-                        <p className="font-bold text-center">2,700,000 ₫</p>
-                    </div>
-                    <div className="col-span-3">
-                        <div className="border-2 mt-3">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/91/ma-y-nghe-nha-c-sony-walkman-nw-ws413-4gb-147486771223-7528226-0.jpg" />
-                        </div>
-                        <h4 className="text-center mt-3">Máy nghe nhạc Sony Walkman (Xanh lá cây)</h4>
-                        <p className="font-bold text-center">2,700,000 ₫</p>
-                    </div>
-                    <div className="col-span-3">
-                        <div className="border-2 mt-3">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/91/ma-y-nghe-nha-c-sony-walkman-nw-ws413-4gb-147486771223-7528226-0.jpg" />
-                        </div>
-                        <h4 className="text-center mt-3">Máy nghe nhạc Sony Walkman (Xanh lá cây)</h4>
-                        <p className="font-bold text-center">2,700,000 ₫</p>
-                    </div>
-                    <div className="col-span-3">
-                        <div className="border-2 mt-3">
-                            <img src="https://electronic04.web4s.vn/uploads/plugin/products/91/ma-y-nghe-nha-c-sony-walkman-nw-ws413-4gb-147486771223-7528226-0.jpg" />
-                        </div>
-                        <h4 className="text-center mt-3">Máy nghe nhạc Sony Walkman (Xanh lá cây)</h4>
-                        <p className="font-bold text-center">2,700,000 ₫</p>
-                    </div>
+                    {products.map((item, index) => {
+                        if (index >= start && index < end) {
+                            return (
+                                <div className="col-span-4" key={index}>
+                                    <div className=" border-2">
+                                        <img src={item.image} />
+                                    </div>
+                                    <h4 className="mx-2 text-center">
+                                        <div className="text-center"><Link to={`product/${item.id}`}>{item.name}</Link></div>
+                                    </h4>
+                                    <p className="text-center font-bold">{item.price}</p>
+                                </div>
+                            );
+                        }
+                    })}
                 </div>
             </div>
             <Footer />

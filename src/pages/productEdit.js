@@ -1,9 +1,13 @@
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
+import { Select } from 'antd';
 import { useParams, useNavigate } from "react-router-dom";
 import { read } from "../api/productAPI";
-
-export default function ProductEditPage(props) {
+function handleChange(value) {
+  console.log(`selected ${value}`);
+}
+const { Option } = Select;
+export default function ProductEdit(props) {
   const {
     register,
     handleSubmit,
@@ -21,7 +25,7 @@ export default function ProductEditPage(props) {
         // call API lấy thông tin sản phẩm thông qua ID gửi lên
         const { data } = await read(id);
         reset(data);
-      } catch (error) {}
+      } catch (error) { }
     };
     getProduct();
   }, [id, reset]);
@@ -30,30 +34,41 @@ export default function ProductEditPage(props) {
     props.onUpdate(data);
   };
 
-  const editProductForm = () => {
-    return (
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <input
-            type="text"
-            {...register("name", { required: true })}
-            placeholder="Tên sản phẩm"
-          />
-          {errors.name && <span>Field is required</span>}
-        </div>
+  return (
+    <form className="ml-10" onSubmit={handleSubmit(onSubmit)}>
+      <h3 className="font-bold text-xl">Mời bạn sửa thông tin:</h3>
+      <div className="mt-5">
+        <p>* tên sản phẩm</p>
+        <input className="border-2 border-gray-400 w-96 rounded p-2"
+          type="text"
+          {...register("name", { required: true })}
+          placeholder="Tên sản phẩm"
+        />
+        {errors.name && <span>Field is required</span>}
+      </div>
 
-        <div>
-          <input
-            type="text"
-            {...register("price")}
-            placeholder="Giá sản phẩm"
-          />
-        </div>
-        <button>Cập nhật</button>
-        <button onClick={() => navigate(-1)}>Quay lại</button>
-      </form>
-    );
-  };
-
-  return <div className="App">{editProductForm()}</div>;
+      <div className="mt-5">
+        <p>* giá sản phẩm</p>
+        <input className="border-2 border-gray-400 mb-5 w-96 rounded p-2"
+          type="text"
+          {...register("price")}
+          placeholder="Giá sản phẩm"
+        />
+      </div>
+      <select style={{ width: 200 }}
+      className='border-2 p-2 rounded'
+      {...register('categorId')}
+      >
+        {props.category && props.category.map((item, index) => {
+          return (
+            <option className="p-2" value={item.id} key={index}>{item.name}</option>
+          )
+        })}
+      </select>
+      <div>
+        <button className="mt-5 bg-green-600 p-1 rounded text-white px-2">Cập nhật</button>
+        <button className="mt-5 ml-5 " onClick={() => navigate(-1)}>Quay lại</button>
+      </div>
+    </form>
+  );
 }

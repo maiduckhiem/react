@@ -4,7 +4,6 @@ export const getAll = () => {
   const url = "/product";
   return api.get(url);
 };
-
 export const remove = (id) => {
   const url = "/product/" + id;
   return api.delete(url);

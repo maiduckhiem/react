@@ -6,7 +6,7 @@ import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/ico
 import Footer from "../component/footer";
 
 const { SubMenu } = Menu;
-const Products = ({ products }) => {
+const Product = ({ products }) => {
   return (
     <div>
       <div className="container mx-auto">
@@ -63,4 +63,4 @@ const Products = ({ products }) => {
   );
 }
 
-export default Products;
+export default Product;
