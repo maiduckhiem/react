@@ -3,7 +3,7 @@ import { MenuUnfoldOutlined } from '@ant-design/icons';
 
 import { Menu } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
-import Footer from "../component/footer";
+import Footer from "../../../component/footer";
 
 const { SubMenu } = Menu;
 const Product = ({ products }) => {

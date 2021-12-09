@@ -9,13 +9,13 @@ const contentStyle = {
     textAlign: 'center',
     background: '#364d79',
 };
-const perpage = 3;
+const perpage = 4;
 const perpage1 = 6;
 const currentpage = 1;
 const start = 0;
 const end = perpage;
 const end1 = perpage1;
-const Home = ({ products }) => {
+const Home = ({ products, category }) => {
     return (
         <div className="Home">
             <Carousel autoplay>
@@ -39,7 +39,7 @@ const Home = ({ products }) => {
                     {products.map((item, index) => {
                         if (index >= start && index < end) {
                             return (
-                                <div className="col-span-4" key={index}>
+                                <div className="col-span-3" key={index}>
                                     <div className=" border-2">
                                         <img src={item.image} />
                                     </div>
@@ -71,7 +71,7 @@ const Home = ({ products }) => {
                         {products.map((item, index) => {
                             if (index >= start && index < end) {
                                 return (
-                                    <div className="col-span-4" key={index}>
+                                    <div className="col-span-3" key={index}>
                                         <div className=" border-2">
                                             <img src={item.image} />
                                         </div>
@@ -92,10 +92,10 @@ const Home = ({ products }) => {
                 <div>
                     <h3 className="text-xl text-green-600 font-bold uppercase mt-10">điện tử - âm thanh</h3>
                     <div className="grid grid-cols-12 gap-5">
-                        {products.map((item, index) => {
+                        {category.map((item, index) => {
                             if (index >= start && index < end) {
                                 return (
-                                    <div className="col-span-4" key={index}>
+                                    <div className="col-span-3" key={index}>
                                         <div className=" border-2">
                                             <img src={item.image} />
                                         </div>
@@ -126,7 +126,7 @@ const Home = ({ products }) => {
                         {products.map((item, index) => {
                             if (index >= start && index < end) {
                                 return (
-                                    <div className="col-span-4" key={index}>
+                                    <div className="col-span-3" key={index}>
                                         <div className=" border-2">
                                             <img src={item.image} />
                                         </div>

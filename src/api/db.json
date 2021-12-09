@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "email": "duckhiem110@gmail.com",
+      "password": "$2a$10$Yg9Ar0ei7MerzR8Q4xn3Verqp.xITSTSK3HwprBL370Pod6SFc6Qi",
+      "middleName": "đức",
+      "name": "khiêm",
+      "id": 1
+    }
+  ],
+  "product": [
+    {
+      "name": "Tủ lạnh 2 cánh Sharp SJ-16VF3 (CMS), 165L (Xám)",
+      "quantity": "33",
+      "price": "17800000",
+      "status": "mới",
+      "description": "22",
+      "categoryId": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/products%2Ft-l-nh-2-canh-sharp-sj-16vf3-cms-165l-1487829161337-2422008-0.jpg?alt=media&token=10bd15c9-0038-44df-8039-a53d096839a6",
+      "id": 1
+    },
+    {
+      "name": "Tủ lạnh Sharp SJ-FX630V-ST, 626 lít, Inverter (Màu bạc)",
+      "quantity": "444",
+      "price": "288.00",
+      "status": "mới",
+      "description": "e",
+      "categoryId": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/products%2Ft-l-nh-sharp-sj-fx630v-st-626-lit-inverter-1475145320982-9109499-0.jpg?alt=media&token=e778aa3d-076b-493f-9d50-ffbbf7100a8d",
+      "id": 2
+    },
+    {
+      "name": "Tủ lạnh Samsung RT29K5532UT/SV, 295 lít, Inverter",
+      "quantity": "33",
+      "price": "100",
+      "status": "mới",
+      "description": "231",
+      "categoryId": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/products%2Ft-l-nh-samsung-rt29k5532ut-sv-295-lit-inverter-1473388337111-5302557-0.jpg?alt=media&token=96fd3717-9fae-4edb-a867-b195f164f3d6",
+      "id": 3
+    },
+    {
+      "name": "Tủ lạnh Samsung RF50K5821FG/SV, 475L (Vàng)",
+      "quantity": "55",
+      "price": "63",
+      "status": "mới",
+      "description": "1",
+      "categoryId": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/products%2Ft-l-nh-samsung-rf50k5821fg-sv-475l-1496630638034-3883989.jpg?alt=media&token=3dde9e4f-f526-433c-b797-4097ae2e98c8",
+      "id": 4
+    }
+  ],
+  "category": [
+    {
+      "name": "điện tử",
+      "id": 1
+    },
+    {
+      "name": "Điện thoại",
+      "id": 2
+    }
+  ],
+  "introduce": [
+    {
+      "name": "Code Cademy",
+      "date": "2021-12-10",
+      "content": "Thay vì dành toàn bộ thời gian cho Facebook, bạn có thể tìm hiểu 25 website dưới đây để học hỏi thêm được nhiều điều từ Internet một cách hoàn toàn miễn phí.",
+      "description": "EdX là một nền hệ thống cung cấp các Khóa học trực tuyến đại chúng mở (massive open online course - MOOC), được thành lập bởi Học viện Công nghệ Massachusetts và Đại học Harvard vào tháng 5 năm 2012 nhằm tổ chức các khóa học trực tuyến miễn phí cấp độ đại học trong nhiều chuyên ngành khác nhau cho mọi đối tượng trên thế giới và để tiến hành các nghiên cứu về lĩnh vực giáo dục. Hiện EdX có 1,2 triệu người sử dụng. Vốn đầu tư của mỗi trường đại học là 30 triệu Mỹ kim vào một dự án phi lợi nhuận. Trước khi EdX được thành lập, hai trường đã thực hiện một khóa học thử nghiệm mang tên \"Điện tử và mạch điện\" vào tháng 12 năm 2011 thông qua một chương trình là MITx. Hiện có 29 trường đại học tham gia hoặc có kế hoạch tham gia cung cấp khóa học cho edX.\n\nCùng với việc cung cấp các khóa học miễn phí, dự án edX cũng được sử dụng cho việc nghiên cứu về giáo dục, về quá trình học tập và về giáo dục từ xa vì các nhà quản lý edX sẽ thu thập và phân tích lượt truy cập của người đăng ký tham gia, cũng như các đặc tính về nhân khẩu học của người đăng ký.Một nhóm nghiên cứu của MIT và Havard do David Pritchard và Lori Breslow lãnh đạo đã xuấn bản các nghiên cứu ban đầu của họ về vấn đề này. Những trường học tham gia dự án edX cũng tổ chức các khảo sát của riêng mình dựa trên các dữ liệu thu thập được từ khóa học mà họ cung cấp. Nghiên cứu tập trung vào các lãnh vực cải tiến sự duy trì, quá trình hoàn tất khóa học và kết quả học tập trong việc học trực tuyến cũng như học theo phương pháp truyền thống tại các trường lớp.\n\nEdX liên kết với nhiều học viện và trường đại học khác nhau ở Hoa Kỳ, CHND Trung Hoa, Mông Cổ và Ấn Độ để triển khai tại trường những \"lớp học ngắn\" (flipped classrooms). Còn gọi là mô hình học tập hỗn hợp hay mô hình học tập pha trộn, các lớp học này là sự kết hợp giữa việc học tại lớp truyền thống với các yếu tố tương tác trực tuyến. Đại học bang San Jose (San Jose State University - SJSU) liên kết với edX để cung cấp môn học 6.00xL Introduction to Computer Science and Programming, một khóa học hỗn hợp tại SJSU và phát hành một báo cáo sơ bộ về quá trình thực hiện vào tháng 2 năm 2013.\n\nEdx sử dụng các phần mềm học tập trực tuyến sử dụng các kinh nghiệm tương tác. Mỗi tuần, một chuỗi nội dung học tập được tải lên trên một khóa học của edX. Mỗi chuỗi nội dung này bao hàm một đoạn phim ngắn (trung bình 10 phút) cùng với các bài tập mang tính chủ động được đặt rải rác, các bài tập này giúp học sinh có thể nhanh chóng thực hành và ứng dụng các bài giảng trong phim. Thông qua các chuỗi nội dung học tập như vậy, giảng viên có thể truyền tải nội dung khóa học cho người học sinh tham gia. Nội dung khóa học cũng có thể bao gồm các hình ảnh minh họa trình bày theo từng trang một. Bên cạnh một thanh bên (sidebar) chứa nội dung văn bản kèm theo và học sinh có thể \"cuộn\" (scroll) văn bản để xem đầy đủ. Khóa học cũng bao gồm các đoạn phim hướng dẫn có nội dung giống như các buổi thảo luận nhóm tại trường học, sách giáo khoa trực tuyến, và diễn đàn trực tuyến để học sinh thảo luận, nhận xét và đặt câu hỏi. Đôi khi khóa học cũng bao hàm một phòng thí nghiệm (ảo) trực tuyến nếu có thể: ví dụ khóa học đầu tiên của edX về mạch điện và điện tử thì có một \"phòng thí nghiệm\" ảo để sinh viên xây dựng các mạch điện ảo.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/introduce%2Fcode-cademy-electronics.jpg?alt=media&token=89170286-d996-4ca7-ada3-31926805b536",
+      "id": 1
+    },
+    {
+      "name": "Managementhelp",
+      "date": "2021-12-15",
+      "content": "Đúng như cái tên của nó, website Managementhelp mang đến cho bạn rất nhiều kiến thức cần thiết về quản trị.",
+      "description": "Hiện website này có tới 1.500.000 triệu lượt xem hàng tháng. Truy cập vào website, ngay trên trang chủ bạn đã thấy có tới 78 chủ đề lớn để bạn lựa chọn bao gồm từ kỹ năng làm việc nhóm, văn hoá tổ chức, nghệ thuật giao tiếp với khách hàng và nhiều kỹ năng bổ ích khác.\n\n \n\nTrong mỗi chủ đề như vậy sẽ có nhiều bài viết nhỏ, mỗi khái niệm quan trọng xuất hiện trong bài viết lại là chủ đề cho nhiều bài nhỏ khác giúp bạn hình dung chi tiết và thiết thực nhất về kỹ năng cũng như học về nó một cách chuyên sâu nhất.\n\nTuy nhiên, đối với những bạn đọc có niềm đam mê và muốn có hiểu biết sâu sắc về các chuyên ngành liên quan đến quản trị thì những kiến thức trình bày trên trang mới chỉ là hết sức cơ bản. Vì thế, bạn nên tận dụng các link giới thiệu ebook dưới mỗi chủ đề hay bài viết, chắc chắn điều này sẽ giúp ích cho bạn.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/introduce%2Fmanagementhelp-download-1.jpg?alt=media&token=06c7e583-f766-48b8-8e77-a56727290a07",
+      "id": 2
+    },
+    {
+      "name": "Coursera",
+      "date": "2021-12-22",
+      "content": "Với hơn 800 khóa học miễn phí phủ rộng nhiều đề tài khác nhau từ lịch sử Internet đến kỹ sư tài chính, Coursera có thể giúp bạn xây dựng kiến thức ở gần như bất cứ lĩnh vực nào.",
+      "description": "EdX là một nền hệ thống cung cấp các Khóa học trực tuyến đại chúng mở (massive open online course - MOOC), được thành lập bởi Học viện Công nghệ Massachusetts và Đại học Harvard vào tháng 5 năm 2012 nhằm tổ chức các khóa học trực tuyến miễn phí cấp độ đại học trong nhiều chuyên ngành khác nhau cho mọi đối tượng trên thế giới và để tiến hành các nghiên cứu về lĩnh vực giáo dục. Hiện EdX có 1,2 triệu người sử dụng. Vốn đầu tư của mỗi trường đại học là 30 triệu Mỹ kim vào một dự án phi lợi nhuận. Trước khi EdX được thành lập, hai trường đã thực hiện một khóa học thử nghiệm mang tên \"Điện tử và mạch điện\" vào tháng 12 năm 2011 thông qua một chương trình là MITx. Hiện có 29 trường đại học tham gia hoặc có kế hoạch tham gia cung cấp khóa học cho edX.\n\nCùng với việc cung cấp các khóa học miễn phí, dự án edX cũng được sử dụng cho việc nghiên cứu về giáo dục, về quá trình học tập và về giáo dục từ xa vì các nhà quản lý edX sẽ thu thập và phân tích lượt truy cập của người đăng ký tham gia, cũng như các đặc tính về nhân khẩu học của người đăng ký.Một nhóm nghiên cứu của MIT và Havard do David Pritchard và Lori Breslow lãnh đạo đã xuấn bản các nghiên cứu ban đầu của họ về vấn đề này. Những trường học tham gia dự án edX cũng tổ chức các khảo sát của riêng mình dựa trên các dữ liệu thu thập được từ khóa học mà họ cung cấp. Nghiên cứu tập trung vào các lãnh vực cải tiến sự duy trì, quá trình hoàn tất khóa học và kết quả học tập trong việc học trực tuyến cũng như học theo phương pháp truyền thống tại các trường lớp.\n\nEdX liên kết với nhiều học viện và trường đại học khác nhau ở Hoa Kỳ, CHND Trung Hoa, Mông Cổ và Ấn Độ để triển khai tại trường những \"lớp học ngắn\" (flipped classrooms). Còn gọi là mô hình học tập hỗn hợp hay mô hình học tập pha trộn, các lớp học này là sự kết hợp giữa việc học tại lớp truyền thống với các yếu tố tương tác trực tuyến. Đại học bang San Jose (San Jose State University - SJSU) liên kết với edX để cung cấp môn học 6.00xL Introduction to Computer Science and Programming, một khóa học hỗn hợp tại SJSU và phát hành một báo cáo sơ bộ về quá trình thực hiện vào tháng 2 năm 2013.\n\nEdx sử dụng các phần mềm học tập trực tuyến sử dụng các kinh nghiệm tương tác. Mỗi tuần, một chuỗi nội dung học tập được tải lên trên một khóa học của edX. Mỗi chuỗi nội dung này bao hàm một đoạn phim ngắn (trung bình 10 phút) cùng với các bài tập mang tính chủ động được đặt rải rác, các bài tập này giúp học sinh có thể nhanh chóng thực hành và ứng dụng các bài giảng trong phim. Thông qua các chuỗi nội dung học tập như vậy, giảng viên có thể truyền tải nội dung khóa học cho người học sinh tham gia. Nội dung khóa học cũng có thể bao gồm các hình ảnh minh họa trình bày theo từng trang một. Bên cạnh một thanh bên (sidebar) chứa nội dung văn bản kèm theo và học sinh có thể \"cuộn\" (scroll) văn bản để xem đầy đủ. Khóa học cũng bao gồm các đoạn phim hướng dẫn có nội dung giống như các buổi thảo luận nhóm tại trường học, sách giáo khoa trực tuyến, và diễn đàn trực tuyến để học sinh thảo luận, nhận xét và đặt câu hỏi. Đôi khi khóa học cũng bao hàm một phòng thí nghiệm (ảo) trực tuyến nếu có thể: ví dụ khóa học đầu tiên của edX về mạch điện và điện tử thì có một \"phòng thí nghiệm\" ảo để sinh viên xây dựng các mạch điện ảo.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/introduce%2Fcoursera-other-electronic-reviews-orig.jpg?alt=media&token=486a4c50-d534-41ff-b18f-58a2dd4e979a",
+      "id": 3
+    },
+    {
+      "name": "Marvin",
+      "date": "2021-12-21",
+      "content": "Marvin là một trình đọc eBook tiện dụng cho những người đam mê đọc sách . Ngoài các tính năng tiêu chuẩn như lựa chọn nền và phông chữ màu sắc , nó còn có một công cụ thông minh nhân tạo đáng kinh ngạc , cho phép bạn khám phá những điều tuyệt vời về tác",
+      "description": "\nMarvin là một trình đọc eBook tiện dụng cho những người đam mê đọc sách . Ngoài các tính năng tiêu chuẩn như lựa chọn nền và phông chữ màu sắc , nó còn có một công cụ thông minh nhân tạo đáng kinh ngạc , cho phép bạn khám phá những điều tuyệt vời về tác giả của một cuốn sách , nhân vật, lịch sử và nhiều thông tin liên quan khác . \n \nCác bảng nội dung , đánh dấu trang , nổi bật và các thuật ngữ được đặt trong một cửa sổ riêng biệt . Marvin sẽ sắp xếp sách của bạn theo tiêu đề, tác giả, ngày thay đổi hoặc đọc.\n \nMarvin hiện mới chỉ hỗ trợ cho hệ điều hành IOS.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/products-446cb.appspot.com/o/introduce%2Fmarvin-thiet-ke-web-wordpress.png?alt=media&token=1e87252b-1814-43d5-82f8-2f9bc0a49534",
+      "id": 4
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Read } from "../api/categoryAPI";
+import { Read } from "../../../api/categoryAPI";
 
 export default function Categoryedit(props) {
   const {

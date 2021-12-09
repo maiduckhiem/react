@@ -34,3 +34,7 @@
   .upload-list-inline [class*='-upload-list-rtl'] .ant-upload-list-item {
     float: right;
   }
+  .image-detail{
+    height: 340px;
+    width: 100%;
+  }

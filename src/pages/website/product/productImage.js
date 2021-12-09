@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pagination, Image } from 'antd';
-import Footer from './footer';
+import Footer from '../../../component/footer';
 
 const Productimage = ({ products }) => {
     return (
